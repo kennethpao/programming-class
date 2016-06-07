@@ -43,8 +43,11 @@ function validate(form){
 
 function account_type_changed() {
 	var account_type = $('#account_type').val();
-	alert(account_type);
 	
-	$('#account_type_tutor').show('fast');
-	$('#account_type_tutor').hide('fast');
+	if (account_type == "user") {
+		$('#account_type_tutor').hide('fast');
+	}
+	else {
+		$('#account_type_tutor').show('fast');
+	}
 }

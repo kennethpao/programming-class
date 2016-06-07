@@ -31,9 +31,9 @@ include("include/html/page_start.php");
 	<div class="row">
 		<div class="col-sm-2 col-sm-push-3 form-control-static">Account type:</div>
 		<div class="col-sm-4 col-sm-push-3">
-			<select class="form-control" id="account_type" name="account_type" onchange="account_type_changed();" readonly="readonly">
-				<option value="Tutor">Tutor</option>
+			<select class="form-control" id="account_type" name="account_type" onchange="account_type_changed();">
 				<option value="user">User</option>
+				<option value="tutor">Tutor</option>
 			</select>
 		</div>
 	</div>
