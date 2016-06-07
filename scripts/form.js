@@ -40,3 +40,11 @@ function validate(form){
     
    return returnval;
 }
+
+function account_type_changed() {
+	var account_type = $('#account_type').val();
+	alert(account_type);
+	
+	$('#account_type_tutor').show('fast');
+	$('#account_type_tutor').hide('fast');
+}
