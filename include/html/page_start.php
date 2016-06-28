@@ -12,13 +12,12 @@
     <title>Home</title>
 
     <link href="css/bootstrap.css" rel="stylesheet">
-    
-    <link href="css/bosco.css" rel="stylesheet">
+
     <link href="css/jumbotron.css" rel="stylesheet">
   </head>
 
-  <body onload="document.frmsignup.btnsubmit.disabled=true">
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+  <body>
+    <nav class="navbar navbar-inverse navbar-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -34,10 +33,10 @@
                 echo '<li> <a class="navbar-brand" href="profile.php">Profile</a></li>';
               }
               ?>
-              <li> <a class="navbar-brand" href="projects.php">Projects</a></li>
+              <li> <a class="navbar-brand" href="Courses.php">Courses</a></li>
               <li> <a class="navbar-brand" href="contact_us.php">Contact Us</a></li>
               <li><a class="navbar-brand" href="members.php">Members</a></li>
-              <li><a class="navbar-brand" href="elibrary.php">e-library</a></li>'
+              <li><a class="navbar-brand" href="elibrary.php">e-library</a></li>
 		  </ul>
             <?php
             if (!$thisuser) {
@@ -45,10 +44,14 @@
             }
             ?>
         </div>
+          
            <a class="navbar-form navbar-right" href="#"><?php if ($thisuser) echo $thisuser['fullname']; ?></a>
           <a class="navbar-form navbar-right" href="logout.php"><?php if ($thisuser) echo "logout"; ?></a>
+          
+          
       </div>
     </nav>
       
     <div class="container">
-      <hr>
+      
+      
