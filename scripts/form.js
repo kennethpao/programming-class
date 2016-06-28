@@ -40,3 +40,14 @@ function validate(form){
     
    return returnval;
 }
+
+function account_type_changed() {
+	var account_type = $('#account_type').val();
+	
+	if (account_type == "user") {
+		$('#account_type_tutor').hide('fast');
+	}
+	else {
+		$('#account_type_tutor').show('fast');
+	}
+}
