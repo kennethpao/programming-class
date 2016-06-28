@@ -51,3 +51,10 @@ function account_type_changed() {
 		$('#account_type_tutor').show('fast');
 	}
 }
+
+function newsletter_signup() {
+	var email = $('#newsletter_email').val();
+	$.get("/ajax/newsletter_signup.php?email="+encodeURIComponent(email), function(result) {
+		alert(result);
+	});
+}
