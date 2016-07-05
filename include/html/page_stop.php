@@ -5,5 +5,6 @@
     <script src="/scripts/jquery.min.js"></script>
     <script src="/scripts/bootstrap.min.js"></script>
     <script src="/scripts/gen_validatorv31.js"></script>
+    <script src="scripts/form.js"></script>
   </body>
 </html>
