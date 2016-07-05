@@ -1,6 +1,6 @@
 
-        <form class="navbar-form navbar-right" method="post" action="index.php">
-            <input type="hidden" name="action" value="login" />
+        <form class="navbar-form navbar-right" method="post" action="forms.php">
+            <input type="hidden" name="action" value="login"/>
             <div class="form-group">
               <input type="text" placeholder="Email or username" name="username" class="form-control">
             </div>

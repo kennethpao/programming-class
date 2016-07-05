@@ -1,35 +1,9 @@
 <?php
 include("include/connect.php");
-
-$error_message = "";
-
-if (isset($_REQUEST['action']) && $_REQUEST['action'] == "login") {
-  $username=mysql_real_escape_string($_POST['username']);
-  $password=md5($_POST['password']);
-
-  $qry=mysql_query("select * from users where username='$username' AND password='$password'");
-  $rows = mysql_num_rows($qry);
-
-  if($rows==1){
-      $thisuser = mysql_fetch_array($qry);
-	  
-      $_SESSION['username'] = $thisuser['username'];
-      $_SESSION['password'] = $thisuser['password'];
-      
-      $error_message = "Hi ".$thisuser['username'].", you have been logged in.";
-  }
-  else {
-    $error_message = "Username or Password is invalid";
-  }
-}
-
 include("include/html/page_start.php");
-if ($error_message != "") echo $error_message;
 ?>
 
-<script src="scripts/form.js"></script>
 
-<!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
 		<img src="images/bosco.jpg">
@@ -48,22 +22,8 @@ if ($error_message != "") echo $error_message;
              </div>
          </div>
     </div>
-    <div class="row" id="tab-group">
-         <div class="box">
-             <div class="col-lg-12">
-                 <h2 class="intro-text text-center"> <strong>Meet the tutors</strong></h2>
-           <?php
-           $q="SELECT * FROM users WHERE account_type='tutor' ORDER BY user_id ASC";
-           $r= mysql_query($q);
-           $tutor=mysql_fetch_array($r);
-           echo "<a href=''>".$tutor['fullname']."</a><br/>";
-           ?>
-
-             </div>
-        </div>
-    </div>
-
       <hr>
+
 
 <form action="" method="post" onsubmit="newsletter_signup(); return false;">
     <strong>signup for a newsletter</strong>

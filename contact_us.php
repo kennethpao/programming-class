@@ -31,14 +31,14 @@ if (isset($_REQUEST['action']) && $_REQUEST['action'] == "send"){
                 </div>
                 <div class="col-md-8">
                     <!-- Embedded Google Map using an iframe - to select your location find it on Google maps and paste the link as the iframe src. If you want to use the Google Maps API instead then have at it! -->
-                    <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>
+                    <iframe width="100%" height="400" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.151545815579!2d32.26412061431372!3d2.771480456132143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1771a60a91d7ca3d%3A0xaf311aa9e027858c!2sBOSCO+Uganda!5e0!3m2!1sen!2sug!4v1467120692899" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
                 <div class="col-md-4">
                     <p>Phone: <strong>0783557773</strong>
                     </p>
                     <p>Email: <strong>oromakenneth99@gmail.com</strong>
                     </p>
-                    <p>Address: <strong>Gulu town<br>P.O BOX 11111 GUlU<br>Behind Uchumi,Plot 000</strong>
+                    <p>Address: <strong>Gulu town<br>P.O BOX 11111 Gulu<br>Catechist training center, For God.</strong>
                     </p>
                 </div>
                 <div class="clearfix"></div>

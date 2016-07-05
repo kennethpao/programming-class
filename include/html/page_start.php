@@ -12,8 +12,8 @@
     <title>Home</title>
 
     <link href="css/bootstrap.css" rel="stylesheet">
-
     <link href="css/jumbotron.css" rel="stylesheet">
+      
   </head>
 
   <body>
@@ -35,8 +35,9 @@
               ?>
               <li> <a class="navbar-brand" href="Courses.php">Courses</a></li>
               <li> <a class="navbar-brand" href="contact_us.php">Contact Us</a></li>
+              <li><a class="navbar-brand" href="tutors.php">Tutors</a></li>
               <li><a class="navbar-brand" href="members.php">Members</a></li>
-              <li><a class="navbar-brand" href="elibrary.php">e-library</a></li>
+              <li><a class="navbar-brand" href="projects.php">Projects</a></li>
 		  </ul>
             <?php
             if (!$thisuser) {
